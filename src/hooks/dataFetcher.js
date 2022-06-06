@@ -14,6 +14,8 @@ const useDataFetcher = (type) => {
             })
             .catch(() => setIsLoading(false));
     }, [type]);
+
+    return { isLoading, stories };
 };
 
 export default useDataFetcher;
